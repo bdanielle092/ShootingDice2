@@ -8,6 +8,7 @@ namespace ShootingDice
     {
         public override int Roll()
         {
+
             //ask user to enter a number
             Console.WriteLine("Enter a number for your Roll");
             //user input

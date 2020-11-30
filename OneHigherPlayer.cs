@@ -21,6 +21,10 @@ namespace ShootingDice
             {
                 Console.WriteLine($"{Name} Wins!");
             }
+            else if (myRoll < otherRoll)
+            {
+                Console.WriteLine($"{other.Name} Wins!");
+            }
             else
             {
                 // if the rolls are equal it's a tie
