@@ -18,7 +18,7 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
-            Player player3 = new Player();
+            HumanPlayer player3 = new HumanPlayer();
             player3.Name = "Wilma";
 
             player3.Play(player2);
@@ -31,6 +31,13 @@ namespace ShootingDice
             player1.Play(large);
 
             Console.WriteLine("-------------------");
+
+            CreativeSmackTalkingPlayer player4 = new CreativeSmackTalkingPlayer();
+            player4.Name = "Kaylis";
+
+            player4.Play(player3);
+
+            Console.WriteLine("--------------------");
 
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large
