@@ -11,7 +11,7 @@ namespace ShootingDice
             SmackTalkingPlayer player1 = new SmackTalkingPlayer();
             player1.Name = "Bob";
 
-            Player player2 = new Player();
+            OneHigherPlayer player2 = new OneHigherPlayer();
             player2.Name = "Sue";
 
             player2.Play(player1);
