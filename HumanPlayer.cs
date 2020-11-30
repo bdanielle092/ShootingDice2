@@ -8,7 +8,9 @@ namespace ShootingDice
     {
         public override int Roll()
         {
+            //ask user to enter a number
             Console.WriteLine("Enter a number for your Roll");
+            //user input
             Console.ReadLine();
             // Return a random number between 1 and DiceSize
             return new Random().Next(DiceSize) + 1;

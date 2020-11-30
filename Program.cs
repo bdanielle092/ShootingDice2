@@ -39,6 +39,13 @@ namespace ShootingDice
 
             Console.WriteLine("--------------------");
 
+            SoreLoserPlayer player5 = new SoreLoserPlayer();
+            player5.Name = "Faith";
+
+            player5.Play(player4);
+
+            Console.WriteLine("--------------------");
+
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large
             };

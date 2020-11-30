@@ -11,8 +11,10 @@ namespace ShootingDice
             // Call roll for "this" object and for the "other" object
 
             int otherRoll = other.Roll();
+            // my roll = other roll plus 1 
             int myRoll = otherRoll + 1;
 
+            //if else statement if user wins or ties
             Console.WriteLine($"{Name} rolls a {myRoll}");
             Console.WriteLine($"{other.Name} rolls a {otherRoll}");
             if (myRoll > otherRoll)

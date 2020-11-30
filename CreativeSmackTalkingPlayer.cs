@@ -6,18 +6,20 @@ namespace ShootingDice
     public class CreativeSmackTalkingPlayer : Player
     {
 
-        public List<string> Taunts = new List<string>()
+        //creating a list of taunts
+        public List<string> ListOfTaunts = new List<string>()
   {
      "I can roll better than you",
-     "You're going down",
-     "I got this "
+     "oh man, You're going down",
+     "You lose again"
   };
         public override int Roll()
         {
-            int randomTaunt = new Random().Next(Taunts.Count);
-            string random = Taunts[randomTaunt];
-            Console.WriteLine($"{Name} shouts {Taunts}!");
-
+            //picking a random taunt from the list 
+            Random Taunts = new Random();
+            int SmackTalk = Taunts.Next(0, ListOfTaunts.Count);
+            string Taunt = ListOfTaunts[SmackTalk];
+            Console.WriteLine($"{Name} shouts {Taunt}");
             // Return a random number between 1 and DiceSize
             return new Random().Next(DiceSize) + 1;
         }
