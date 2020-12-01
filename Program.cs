@@ -42,7 +42,14 @@ namespace ShootingDice
             SoreLoserPlayer player5 = new SoreLoserPlayer();
             player5.Name = "Faith";
 
-            player5.Play(player4);
+            try
+            {
+                player5.Play(player4);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine($"{player5.Name} yells I quit");
+            }
 
             Console.WriteLine("--------------------");
 

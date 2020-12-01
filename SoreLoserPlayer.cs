@@ -21,7 +21,7 @@ namespace ShootingDice
             }
             else if (myRoll < otherRoll)
             {
-                Console.WriteLine($"{other.Name} Wins!");
+                throw new Exception();
             }
             else
             {
