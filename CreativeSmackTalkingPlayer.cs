@@ -11,7 +11,7 @@ namespace ShootingDice
         {
             "I can roll better than you",
             "oh man, You're going down",
-            "You lose again"
+            "You're going to lose this round"
         };
         public override int Roll()
         {

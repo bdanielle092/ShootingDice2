@@ -60,8 +60,22 @@ namespace ShootingDice
 
             Console.WriteLine("--------------------");
 
+            SoreLoserUpperHalfPlayer player7 = new SoreLoserUpperHalfPlayer();
+            player7.Name = "Tyler";
+
+            try
+            {
+                player7.Play(player6);
+            }
+            catch
+            {
+                Console.WriteLine($"{player7.Name} shouts this is dumb, I quit");
+            }
+
+            Console.WriteLine("--------------------");
+
             List<Player> players = new List<Player>() {
-                player1, player2, player3, player4, player5, player6, large
+                player1, player2, player3, player4, player5, player6, player7, large
             };
 
             PlayMany(players);
